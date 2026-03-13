@@ -16,10 +16,8 @@ connectCloudinary()
 
 app.use(cors({
   origin: [
-    "https://pers-fe.vercel.app",
+    "https://pers-fe-black.vercel.app",
     "https://pers-ad.vercel.app",
-    process.env.FRONTEND_URL,
-    process.env.ADMIN_URL,
   ],
   credentials: true,
 }));
