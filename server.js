@@ -15,10 +15,14 @@ connectDB()
 connectCloudinary()
 
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+    "https://pers-fe.vercel.app",
+    "https://pers-ad.vercel.app",
+    process.env.FRONTEND_URL,
+    process.env.ADMIN_URL,
+  ],
   credentials: true,
 }));
-
 // middlewares
 app.use(express.json())
 
